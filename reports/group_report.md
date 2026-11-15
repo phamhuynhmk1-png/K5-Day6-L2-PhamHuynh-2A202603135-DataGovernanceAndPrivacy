@@ -12,8 +12,8 @@
 | Challenge | T02 · Raw QC Triage: ảnh mờ, lóa, thiếu sáng, nén |
 | Thành viên + vai trò | Pham Huynh (2A202603135): làm cá nhân, đảm nhận mọi vai trò (integrator, algorithm, QA/metric, report) |
 | Git URL | https://github.com/phamhuynhmk1-png/K5-Day6-L2-PhamHuynh-2A202603135-DataGovernanceAndPrivacy |
-| Tag `demo-180m` (commit) | _chưa tạo_ |
-| Tag `final-24h` (commit) | _chưa tạo_ |
+| Tag `demo-180m` (commit) | `demo-180m` → 72c9f36 |
+| Tag `final-24h` (commit) | `final-24h` → commit cuối trên main (xem `git show final-24h`) |
 
 ## 01 · Problem statement
 
@@ -232,7 +232,7 @@ python -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt 
   - thiếu ngưỡng thì fail rõ ràng
 - `tests/test_cli.py::test_template_pipeline_fails_clearly_not_silently` đổi từ t02 sang t11: test gốc khẳng định template
   t02 **chưa** được cài, điều không còn đúng sau khi cài t02. Ý nghĩa test giữ nguyên: track chưa cài phải trả exit 3.
-- **Máy:** Windows 11, AMD64 Family 25, Python 3.12.0. Base commit: `b0ce8bf`.
+- **Máy:** Windows 11, AMD64 Family 25, Python 3.12.0. Base commit của đề: `b0ce8bf`.
 
 ## 09 · Limitations & ethics
 
@@ -257,7 +257,7 @@ python -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt 
 
 | Học viên | Git author | Module / vai trò | Commit SHA | Trình bày? |
 |---|---|---|---|---|
-| Pham Huynh (2A202603135) | phamhuynhmk1-png | Toàn bộ: config, pipeline, baseline, tools, tests, report (làm cá nhân) | _điền sau khi commit_ | Có |
+| Pham Huynh (2A202603135) | phamhuynhmk1-png | Toàn bộ: config, pipeline, baseline, tools, tests, report (làm cá nhân) | 5c1adcc (fix line endings), bce2d02 (pipeline + baseline + tests), 72c9f36 (reports) | Có |
 
 ## 11 · References
 
@@ -271,8 +271,8 @@ python -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt 
 
 **Bảng 3 · Checklist chốt khi nộp**
 
-- [ ] Link repo và tag cuối cùng trong README; input mẫu không chứa PII thật. _(chưa tạo tag)_
+- [x] Link repo và tag cuối cùng trong report; input mẫu không chứa PII thật.
 - [x] Đúng 1 lệnh run, 1 lệnh evaluate, 1 lệnh tests; không cần download khi chạy.
 - [x] Có baseline/PoC metrics (dev nội bộ; eval chờ giảng viên), ≥1 failure case, reviewer evidence, decision log.
 - [x] Có license/source provenance, data splits, seed, offline environment, GT/eval N.
-- [ ] Mỗi thành viên có ≥1 commit thực chất. _(chưa commit)_
+- [x] Mỗi thành viên có ≥1 commit thực chất.

@@ -1,2 +1,2 @@
 member,git_author_name,git_email,role,modules_files,commit_shas,evidence_note,presenter
-Pham Huynh (2A202603135),phamhuynhmk1-png,,All roles (individual submission),configs/lab.yaml; configs/t02_dev_manual_labels.csv; src/pipeline.py; src/t02_qc.py; src/baseline_t02.py; tools/calibrate_t02.py; tools/dev_eval_t02.py; tools/ablation_t02.py; tests/test_t02_pipeline.py; reports/,TODO after commit,Individual work,yes
+Pham Huynh (2A202603135),phamhuynhmk1-png,,All roles (individual submission),configs/lab.yaml; configs/t02_dev_manual_labels.csv; src/pipeline.py; src/t02_qc.py; src/baseline_t02.py; tools/calibrate_t02.py; tools/dev_eval_t02.py; tools/ablation_t02.py; tests/test_t02_pipeline.py; reports/,5c1adcc; bce2d02; 72c9f36,Individual work,yes
