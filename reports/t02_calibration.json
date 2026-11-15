@@ -1,0 +1,45 @@
+{
+  "ref_luma_by_light": {
+    "day": 120.01,
+    "dusk": 89.03,
+    "night": 32.42
+  },
+  "thresholds": {
+    "blur": {
+      "threshold": 31.4936,
+      "scale": 1.6645,
+      "separable_on_dev": true,
+      "n_defect": 8,
+      "n_clean": 28
+    },
+    "dark": {
+      "threshold": 0.4546,
+      "scale": 0.742,
+      "separable_on_dev": true,
+      "n_defect": 6,
+      "n_clean": 28
+    },
+    "glare": {
+      "threshold": 177.8715,
+      "scale": 0.8172,
+      "separable_on_dev": true,
+      "n_defect": 4,
+      "n_clean": 28
+    },
+    "compression": {
+      "threshold": 1.7727,
+      "scale": 0.05,
+      "separable_on_dev": true,
+      "n_defect": 10,
+      "n_clean": 28
+    }
+  },
+  "baseline_lap_threshold": {
+    "threshold": 758.8193,
+    "f1": 0.8421,
+    "tp": 24,
+    "fp": 5,
+    "fn": 4
+  },
+  "n_dev_labelled": 56
+}

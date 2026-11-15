@@ -1,0 +1,21 @@
+rank,item_id,score,reason,suggested_action,slice,evidence_path,reviewer,reviewer_decision,override_value,review_note,reviewed_at
+1,img_06_2,10.548926,flags: compression=+10.55,RECAPTURE:compression,cam_B/night,images/img_06_2.jpg,Pham Huynh,approve,,"blocky 8x8 artefacts at night, confirmed compression",2026-11-15T02:29:03+00:00
+2,img_05_2,7.875119,flags: compression=+7.88,RECAPTURE:compression,cam_A/day,images/img_05_2.jpg,Pham Huynh,approve,,"heavy blockiness, confirmed compression",2026-11-15T02:29:03+00:00
+3,img_23_2,7.513652,flags: compression=+7.51,RECAPTURE:compression,cam_A/day,images/img_23_2.jpg,Pham Huynh,approve,,"heavy blockiness, confirmed compression",2026-11-15T02:29:03+00:00
+4,img_01_3,6.191375,flags: compression=+6.19,RECAPTURE:compression,cam_A/night,images/img_01_3.jpg,Pham Huynh,approve,,"blockiness around lights at night, confirmed compression",2026-11-15T02:29:03+00:00
+5,img_17_2,5.422584,flags: glare=+5.42,RECAPTURE:glare,cam_A/day,images/img_17_2.jpg,Pham Huynh,approve,,"large sun-like glare over road, confirmed glare",2026-11-15T02:29:03+00:00
+6,img_13_2,4.594918,flags: compression=+4.59,RECAPTURE:compression,cam_A/night,images/img_13_2.jpg,Pham Huynh,approve,,"blockiness at night, confirmed compression",2026-11-15T02:29:03+00:00
+7,img_15_3,3.540807,"flags: blur=+0.46, dark=+3.54",RECAPTURE:dark,cam_B/dusk,images/img_15_3.jpg,Pham Huynh,approve,,"almost black dusk frame, dark is the dominant defect (slight softness too)",2026-11-15T02:29:03+00:00
+8,img_23_3,3.250643,flags: dark=+3.25,RECAPTURE:dark,cam_A/day,images/img_23_3.jpg,Pham Huynh,approve,,"day frame underexposed, confirmed dark",2026-11-15T02:29:03+00:00
+9,img_17_3,3.085048,flags: dark=+3.09,RECAPTURE:dark,cam_A/day,images/img_17_3.jpg,Pham Huynh,approve,,"day frame underexposed, confirmed dark",2026-11-15T02:29:03+00:00
+10,img_01_2,1.948841,flags: dark=+1.95,RECAPTURE:dark,cam_A/night,images/img_01_2.jpg,Pham Huynh,approve,,"night frame much darker than night siblings, confirmed dark",2026-11-15T02:29:03+00:00
+11,img_16_3,1.811117,flags: compression=+1.81,RECAPTURE:compression,cam_A/day,images/img_16_3.jpg,Pham Huynh,approve,,"ringing/blocks around cars at 3x zoom, confirmed compression",2026-11-15T02:29:03+00:00
+12,img_13_3,1.699984,flags: blur=+1.70,RECAPTURE:blur,cam_A/night,images/img_13_3.jpg,Pham Huynh,approve,,"strong blur at night, confirmed blur",2026-11-15T02:29:03+00:00
+13,img_15_2,1.684297,flags: blur=+1.68,RECAPTURE:blur,cam_B/dusk,images/img_15_2.jpg,Pham Huynh,approve,,"strong blur, confirmed blur",2026-11-15T02:29:03+00:00
+14,img_05_3,1.655553,flags: glare=+1.66,RECAPTURE:glare,cam_A/day,images/img_05_3.jpg,Pham Huynh,approve,,"local glare on rear car, plate area burnt, confirmed glare",2026-11-15T02:29:03+00:00
+15,img_19_3,1.121713,flags: blur=+1.12,RECAPTURE:blur,cam_A/day,images/img_19_3.jpg,Pham Huynh,approve,,"blur, confirmed",2026-11-15T02:29:03+00:00
+16,img_16_2,1.076437,flags: blur=+1.08,RECAPTURE:blur,cam_A/day,images/img_16_2.jpg,Pham Huynh,approve,,"blur, confirmed",2026-11-15T02:29:03+00:00
+17,img_03_3,0.982275,flags: compression=+0.98,RECAPTURE:compression,cam_B/night,images/img_03_3.jpg,Pham Huynh,approve,,"mild ringing around cars at 3x zoom, confirmed compression",2026-11-15T02:29:03+00:00
+18,img_06_0,-0.936533,no family beyond threshold,KEEP:none,cam_B/night,images/img_06_0.jpg,Pham Huynh,approve,,"clean night frame, keep",2026-11-15T02:29:03+00:00
+19,img_06_1,-0.940142,no family beyond threshold,KEEP:none,cam_B/night,images/img_06_1.jpg,Pham Huynh,approve,,"clean night frame, keep",2026-11-15T02:29:03+00:00
+20,img_23_0,-1.016907,no family beyond threshold,KEEP:none,cam_A/day,images/img_23_0.jpg,Pham Huynh,approve,,"clean day frame, keep",2026-11-15T02:29:03+00:00

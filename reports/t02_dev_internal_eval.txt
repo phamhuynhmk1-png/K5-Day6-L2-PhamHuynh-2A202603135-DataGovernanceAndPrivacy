@@ -1,0 +1,34 @@
+
+== out/baseline/ranked_review.csv (DEV, manual labels, B=20)
+                           metric    value  numerator  denominator       slice
+                  Defect Recall@B 0.571429       16.0         28.0         all
+                      Precision@B 0.800000       16.0         20.0         all
+Defect-type accuracy (GT defects) 0.285714        NaN          NaN         all
+             False alarm in top-B 0.166667        3.0         18.0   light=day
+             False alarm in top-B 0.125000        1.0          8.0  light=dusk
+             False alarm in top-B 0.000000        0.0          2.0 light=night
+             slice  n  recall_in_topB  false_alarm_in_topB
+         light=day 36        0.611111             0.166667
+        light=dusk 16        0.500000             0.125000
+       light=night  4        0.500000             0.000000
+       defect=blur  8        1.000000                  NaN
+defect=compression 10        0.300000                  NaN
+       defect=dark  6        0.833333                  NaN
+      defect=glare  4        0.000000                  NaN
+
+== out/poc/ranked_review.csv (DEV, manual labels, B=20)
+                           metric    value  numerator  denominator       slice
+                  Defect Recall@B 0.714286       20.0         28.0         all
+                      Precision@B 1.000000       20.0         20.0         all
+Defect-type accuracy (GT defects) 1.000000        NaN          NaN         all
+             False alarm in top-B 0.000000        0.0         18.0   light=day
+             False alarm in top-B 0.000000        0.0          8.0  light=dusk
+             False alarm in top-B 0.000000        0.0          2.0 light=night
+             slice  n  recall_in_topB  false_alarm_in_topB
+         light=day 36        0.666667                  0.0
+        light=dusk 16        0.875000                  0.0
+       light=night  4        0.500000                  0.0
+       defect=blur  8        0.750000                  NaN
+defect=compression 10        0.900000                  NaN
+       defect=dark  6        0.500000                  NaN
+      defect=glare  4        0.500000                  NaN

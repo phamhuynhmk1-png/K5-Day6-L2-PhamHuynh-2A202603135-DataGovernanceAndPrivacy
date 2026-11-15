@@ -1,0 +1,2 @@
+ts,scope,status,canonical,reason_code,reason,owner,evidence
+2026-11-15T02:29:08+00:00,t02:eval,REWORK,REWORK,RECAPTURE_RATE_ABOVE_POLICY,17/40 images (42%) need recapture > policy 25%; recapture before release,Pham Huynh (Data QC owner),out\poc\ranked_review.csv;out\poc\review_queue.csv;out\poc\audit_log.jsonl
