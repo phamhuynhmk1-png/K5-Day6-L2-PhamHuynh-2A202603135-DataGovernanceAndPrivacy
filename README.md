@@ -1,5 +1,15 @@
 # Day 06 · Data Lab · Field-to-Release PoC (AI20K · Data Track)
 
+> **Bài nộp:** Pham Huynh (2A202603135), làm cá nhân · Challenge **T02 · Raw QC Triage**
+> · Repo: https://github.com/phamhuynhmk1-png/K5-Day6-L2-PhamHuynh-2A202603135-DataGovernanceAndPrivacy
+> · Tag cuối: **`final-24h`** (demo: `demo-180m`) · Báo cáo: [`reports/group_report.md`](reports/group_report.md)
+>
+> ```bash
+> python -m src.main --config configs/lab.yaml --track t02 --output out/poc --run-name poc --offline --seed 42
+> python -m src.evaluate --track t02 --pred out/poc/ranked_review.csv --run-name poc --out reports/metrics_poc.json   # cần gt/ của giảng viên
+> pytest -q
+> ```
+
 Starter repo cho bài lab **Data Pipeline, Privacy & Production PoC**: 14 challenge (T01–T14), một contract chung.
 Repo cung cấp **dữ liệu offline + hạ tầng dùng chung + metric chuẩn + template báo cáo** để nhóm tập trung vào phần quan trọng:
 vấn đề, baseline, thuật toán, đánh giá trung thực, human-in-the-loop và quyết định GO/HOLD/REWORK.

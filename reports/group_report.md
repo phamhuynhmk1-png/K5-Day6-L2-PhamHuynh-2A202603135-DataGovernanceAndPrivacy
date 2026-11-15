@@ -105,7 +105,7 @@
 | Precision@20 | 0.800 (16/20), [0.584, 0.919] | **1.000 (20/20)**, [0.839, 1.000] | +0.200 |
 | Hard slice: ảnh sạch cam_B lọt top-20 | 4 (img_12_0, 09_0, 21_0, 00_0) | **0** | bẫy "cam_B quang học mềm" |
 | Recall theo loại: glare / compression | 0.00 / 0.30 | 0.50 / 0.90 | baseline mù với lỗi không làm giảm độ nét |
-| Defect-type accuracy (ảnh lỗi) | 0.286 (chỉ biết nói "blur") | **1.000** | |
+| Defect-type accuracy (ảnh lỗi) | 0.286 (chỉ biết nói "blur") | **1.000** | +0.714 |
 | Runtime toàn bộ run (96 ảnh) | 0.43 s | 1.16 s (3.45 ms/ảnh ở bước process) | CPU AMD64 Family 25, Windows 11, Python 3.12 |
 
 Các khoảng Wilson của Recall chồng lên nhau (N = 28). Chênh lệch Recall trên dev **chưa có ý nghĩa thống kê**.
@@ -147,7 +147,7 @@ Slice trên DEV (top-20, nội bộ):
 | Slice | N | Baseline recall / false alarm | PoC recall / false alarm | Ghi chú |
 |---|---|---|---|---|
 | light=day | 36 | 0.611 / 0.167 | 0.667 / 0.000 | false alarm của baseline đều là cam_B |
-| light=dusk | 16 | 0.500 / 0.125 | 0.875 / 0.000 | |
+| light=dusk | 16 | 0.500 / 0.125 | 0.875 / 0.000 | false alarm của baseline là cam_B (img_12_0) |
 | light=night | 4 | 0.500 / 0.000 | 0.500 / 0.000 | chỉ 4 ảnh đêm ở dev, trong khi eval có 16: rủi ro lớn nhất |
 
 **Failure case 1: glare ban đêm bị bỏ sót** (img_03_2, img_06_3, eval, cam_B night).
@@ -257,7 +257,7 @@ python -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt 
 
 | Học viên | Git author | Module / vai trò | Commit SHA | Trình bày? |
 |---|---|---|---|---|
-| Pham Huynh (2A202603135) | phamhuynhmk1-png | Toàn bộ: config, pipeline, baseline, tools, tests, report (làm cá nhân) | 5c1adcc (fix line endings), bce2d02 (pipeline + baseline + tests), 72c9f36 (reports) | Có |
+| Pham Huynh (2A202603135) | phamhuynhmk1-png <phamhuynhmk1@gmail.com> | Toàn bộ: config, pipeline, baseline, tools, tests, report (làm cá nhân) | 5c1adcc (fix line endings), bce2d02 (pipeline + baseline + tests), 72c9f36 (reports) | Có |
 
 ## 11 · References
 
@@ -271,7 +271,7 @@ python -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt 
 
 **Bảng 3 · Checklist chốt khi nộp**
 
-- [x] Link repo và tag cuối cùng trong report; input mẫu không chứa PII thật.
+- [x] Link repo và tag cuối cùng trong README và report; input mẫu không chứa PII thật.
 - [x] Đúng 1 lệnh run, 1 lệnh evaluate, 1 lệnh tests; không cần download khi chạy.
 - [x] Có baseline/PoC metrics (dev nội bộ; eval chờ giảng viên), ≥1 failure case, reviewer evidence, decision log.
 - [x] Có license/source provenance, data splits, seed, offline environment, GT/eval N.
