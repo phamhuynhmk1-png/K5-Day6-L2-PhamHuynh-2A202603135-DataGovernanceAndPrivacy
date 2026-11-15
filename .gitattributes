@@ -1,0 +1,2 @@
+# Fixtures are hash-pinned in manifest.csv: never convert line endings
+fixtures/** -text
