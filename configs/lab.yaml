@@ -2,8 +2,8 @@
 # Group config — EDIT ME (one per group). Values here override
 # the track defaults loaded from `track_config`.
 # ============================================================
-group_id: G00                     # e.g. G07
-owner: "TODO: tên người ký duyệt (role)"   # mandatory for every Decision
+group_id: "N/A (làm cá nhân, không có mã nhóm)"
+owner: "Pham Huynh (Data QC owner)"   # mandatory for every Decision
 track_config: tracks/t02.yaml     # pick your challenge: tracks/t01.yaml ... tracks/t14.yaml
 track: t02                        # must match track_config
 input: fixtures/t02_raw_qc        # or data/real/... if your instructor provided a real pack
@@ -13,4 +13,26 @@ offline: true                     # demo/eval must not touch the network
 strict_provenance: true           # fail if manifest.csv hashes do not match
 
 # Track params (merged over track_config.params). Freeze before evaluation.
-params: {}
+# FROZEN 2026-11-14 from `python -m tools.calibrate_t02` (dev split + configs/t02_dev_manual_labels.csv only).
+params:
+  budget: 20
+  queue_split: eval               # review queue = the release pool the metric scores on
+  max_recapture_rate: 0.25        # release policy: above this share of flagged images -> REWORK
+  ref_luma_by_light:
+    day: 120.01
+    dusk: 89.03
+    night: 32.42
+  thresholds:
+    blur:
+      threshold: 31.4936
+      scale: 1.6645
+    dark:
+      threshold: 0.4546
+      scale: 0.742
+    glare:
+      threshold: 177.8715
+      scale: 0.8172
+    compression:
+      threshold: 1.7727
+      scale: 0.05
+  baseline_lap_threshold: 758.8193
